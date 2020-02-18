@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled'
 
-import Location from './location';
+import Location from './Location';
 
 const WeatherCard = (props) => 
 {
