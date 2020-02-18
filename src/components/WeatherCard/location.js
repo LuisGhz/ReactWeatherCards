@@ -1,30 +1,29 @@
-import React from 'react';
-import styled from '@emotion/styled';
+import React from "react";
+import styled from "@emotion/styled";
 
-const Location = (props) => 
-{
-    const fontFamily = 'font-family: Merriweather, sans-serif;';
+const Location = props => {
+  const fontFamily = "font-family: Merriweather, sans-serif;";
 
-    const locationContainer = styled.div`
-        text-align:center;
-    `
+  const Container = styled.div`
+    text-align: center;
+  `;
 
-    const City = styled.h1`
-        ${fontFamily}
-        font-size: 1.6rem;
-    `
+  const City = styled.h1`
+    ${fontFamily}
+    font-size: 1.6rem;
+  `;
 
-    const Country = styled.h3`
-        ${fontFamily}
-        font-size: 1.1rem;
-    `
+  const Country = styled.h3`
+    ${fontFamily}
+    font-size: 1.1rem;
+  `;
 
-    return (
-    <locationContainer>
-        <City>Sydney</City>
-        <Country className='country Merri' >AU</Country>
-    </locationContainer>
-    );
-}
+  return (
+    <Container>
+      <City>Sydney</City>
+      <Country className="country Merri">AU</Country>
+    </Container>
+  );
+};
 
 export default Location;
